@@ -2,27 +2,20 @@ package academy.devdojo.maratonajava.introducao;
 
 public class Aula05EstruturasCondicionais06 {
     public static void main(String[] args) {
-        //Utilizando Switch e dados os valores de 1 a 7, imprima se é dia útil ou final de semana
-         // considerando 1 como Domingo
-        byte dia =1;
-        switch (dia){
-            case 1:
-            case 7:
-                System.out.println("Final de Semana");
-            case 2:
-            case 3:
-            case 4:
-            case 5:
-            case 6:
-                System.out.println("Dia útil");
-                break;
-            default:
-                System.out.println("Opção Invalida");
-                break;
-        }
+        // while, do while, for
+            int count = 0;
 
+            while (count < 10){
+                System.out.println(++count);
+            }
+            count = 0;
+             do{
+                 System.out.println("dentro do-while"+ ++count);
+             }while (count <10);
 
-
+             for (count= 0 ;count<10;count++){
+                 System.out.println("For"+ count);
+             }
 
     }
 }
